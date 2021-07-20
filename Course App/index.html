@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>Course App</h1>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-5">
+                <form action="" id="new-course">
+                    <div class="form-control-sm">
+                        <label for="title" class="title d-xl-block mb-2">Course title</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-control-sm">
+                        <label for="instructor" class="instructor d-xl-block mb-2">Instructor</label>
+                        <input type="text" class="form-control" id="instructor">
+                    </div>
+                    <div class="form-control-sm">
+                        <label for="image" class="image d-xl-block mb-2">Image</label>
+                        <input type="text" class="form-control" id="image">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3 ms-2">Add</button>
+                </form>
+            </div>
+            <div class="col-md-7">
+                <table class="table table-hover table-dark mt-4 table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Instructor</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="course-list">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
