@@ -32,7 +32,7 @@ class Storage {
     static deleteCourse(element) {
         if (element.classList.contains("dalete")) {
             let id = element.getAttribute("data-id");
-            const courses = Storage.getCourses();
+            const courses = this.getCourses();
             courses.forEach((course, index) => {
                 if (course.courseId == id)
                     courses.splice(index, 1);
